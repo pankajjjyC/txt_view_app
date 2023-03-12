@@ -1,0 +1,22 @@
+1.> python3 -m venv [Virtual Environment Name]
+	Example,
+		> python3 -m venv sample_venv
+
+2..\sample_venv\Scripts\activate
+
+3.take cmd path to project folder 
+
+
+4.python -m pip install -r requirements.txt	
+
+
+5.python manage.py collectstatic
+
+6. python manage.py makemigrations
+
+7. python manage.py migrate
+
+8. python manage.py createsuperuser
+
+8. python manage.py runserver 
+

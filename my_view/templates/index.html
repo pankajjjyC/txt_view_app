@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="position:relative;left: 550px;top: 20px;"> Welcome to txt file view</h1>
+    
+        <form action="read_file" method="post"  enctype="multipart/form-data" style="position:relative;left: 550px;top: 20px;">
+            {%csrf_token%}
+            
+            <label for="myfile">Select your file to view</label><br> <br>
+            <input type="number" name="id" id="" value='1' hidden><br>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <input type="submit" value="View">
+
+            {% if content %}
+                <textarea name="" id="" cols="60" rows="30">{{content}}</textarea>
+            {% endif %}
+
+
+        </form> 
+</body>
+</html>
